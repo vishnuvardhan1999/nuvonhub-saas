@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // Always use ESM syntax here.
 export default defineConfig({
-  plugins: [react()],
-  server: { port: 5173, strictPort: false },
-  preview: { port: 3001, strictPort: false }
+  server: { host: true, port: 5173 },
+  preview: { host: true, port: 3001 }
 })
+
